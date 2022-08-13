@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciat:CIATDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ciat="ciat">
+  <itsProcessDiagrams>
+    <processNodes xsi:type="ciat:CooperativeTask" name="Proceso de Revisión">
+      <taskRoles xsi:type="ciat:Actor" name="Examinador1"/>
+      <taskRoles xsi:type="ciat:Actor" name="Examinador2"/>
+      <taskRoles xsi:type="ciat:Actor" name="Editor"/>
+      <taskObjects name="R/W: Artículo"/>
+      <taskObjects name="C/R/W: Revisión"/>
+    </processNodes>
+  </itsProcessDiagrams>
+</ciat:CIATDiagram>

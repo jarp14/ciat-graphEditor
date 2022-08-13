@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ciat="ciat" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_yqsU8LvkEeyP4YL-f69cpw" type="Ciat" name="congress.ciat_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_080IkLvkEeyP4YL-f69cpw" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_080voLvkEeyP4YL-f69cpw" type="5044"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_0819wLvkEeyP4YL-f69cpw" type="7002">
+      <children xmi:type="notation:Shape" xmi:id="_4oH8sLvkEeyP4YL-f69cpw" type="3014" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_4oH8s7vkEeyP4YL-f69cpw" type="5021"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_4oH8tLvkEeyP4YL-f69cpw" type="7005">
+          <children xmi:type="notation:Shape" xmi:id="_l9APcLvmEey6NNG7mxs8RA" type="3016" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_l9APcrvmEey6NNG7mxs8RA" type="5016"/>
+            <element xmi:type="ciat:Actor" href="congress.ciat#//@itsProcessDiagrams.0/@processNodes.0/@taskRoles.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l9APcbvmEey6NNG7mxs8RA"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_nAj-MLvmEey6NNG7mxs8RA" type="3016" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_nAklQLvmEey6NNG7mxs8RA" type="5016"/>
+            <element xmi:type="ciat:Actor" href="congress.ciat#//@itsProcessDiagrams.0/@processNodes.0/@taskRoles.1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nAj-MbvmEey6NNG7mxs8RA"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_qgoysLvmEey6NNG7mxs8RA" type="3016" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_qgoysrvmEey6NNG7mxs8RA" type="5016"/>
+            <element xmi:type="ciat:Actor" href="congress.ciat#//@itsProcessDiagrams.0/@processNodes.0/@taskRoles.2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qgoysbvmEey6NNG7mxs8RA"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_4oH8tbvkEeyP4YL-f69cpw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_4oH8trvkEeyP4YL-f69cpw"/>
+        </children>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_4oH8t7vkEeyP4YL-f69cpw" type="7006">
+          <children xmi:type="notation:Node" xmi:id="_r7rNULvmEey6NNG7mxs8RA" type="3020">
+            <children xmi:type="notation:DecorationNode" xmi:id="_r7rNVLvmEey6NNG7mxs8RA" type="5020"/>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_r7rNUbvmEey6NNG7mxs8RA"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_r7rNUrvmEey6NNG7mxs8RA" fontName="Segoe UI"/>
+            <element xmi:type="ciat:Object" href="congress.ciat#//@itsProcessDiagrams.0/@processNodes.0/@taskObjects.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7rNU7vmEey6NNG7mxs8RA"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tP84oLvmEey6NNG7mxs8RA" type="3020">
+            <children xmi:type="notation:DecorationNode" xmi:id="_tP9fsLvmEey6NNG7mxs8RA" type="5020"/>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_tP84obvmEey6NNG7mxs8RA"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_tP84orvmEey6NNG7mxs8RA" fontName="Segoe UI"/>
+            <element xmi:type="ciat:Object" href="congress.ciat#//@itsProcessDiagrams.0/@processNodes.0/@taskObjects.1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tP84o7vmEey6NNG7mxs8RA"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_4oH8uLvkEeyP4YL-f69cpw"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_4oH8ubvkEeyP4YL-f69cpw"/>
+        </children>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_4oH8sbvkEeyP4YL-f69cpw"/>
+        <element xmi:type="ciat:CooperativeTask" href="congress.ciat#//@itsProcessDiagrams.0/@processNodes.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4oH8srvkEeyP4YL-f69cpw" x="220" y="58" width="216" height="176"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_080IkbvkEeyP4YL-f69cpw"/>
+    <element xmi:type="ciat:ProcessDiagram" href="congress.ciat#//@itsProcessDiagrams.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_080IkrvkEeyP4YL-f69cpw" x="55" y="50" width="706" height="301"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_yqsU8bvkEeyP4YL-f69cpw"/>
+  <element xmi:type="ciat:CIATDiagram" href="congress.ciat#/"/>
+</notation:Diagram>

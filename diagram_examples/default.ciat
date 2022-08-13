@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciat:CIATDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ciat="ciat">
+  <itsProcessDiagrams name="TFG Inter-Action Diagram">
+    <processNodes xsi:type="ciat:Init"/>
+    <processNodes xsi:type="ciat:End"/>
+    <processNodes xsi:type="ciat:AbstractTask" name="1. Draft Plan Procedure">
+      <processNodes xsi:type="ciat:CollaborativeTask" name="1.1. Draft Plan Writing">
+        <taskRoles xsi:type="ciat:Actor" name="Student"/>
+        <taskRoles xsi:type="ciat:Actor" name="Director"/>
+        <taskObjects name="C: DraftPlan"/>
+      </processNodes>
+      <processNodes xsi:type="ciat:CollaborativeTask" name="1.2. Examining Board Proposal">
+        <taskRoles xsi:type="ciat:Actor" name="Student"/>
+        <taskRoles xsi:type="ciat:Actor" name="Director"/>
+        <taskObjects name="R/W: DraftPlan"/>
+      </processNodes>
+      <processNodes xsi:type="ciat:IndividualTask" name="1.3. Request">
+        <taskRoles xsi:type="ciat:Actor" name="Student"/>
+        <taskObjects name="R/W: DraftPlan"/>
+      </processNodes>
+    </processNodes>
+    <processNodes xsi:type="ciat:IndividualTask" name="2. Academic Committee Valuation">
+      <taskRoles xsi:type="ciat:Group" name="Committee"/>
+      <taskObjects name="R/W: DraftPlan"/>
+    </processNodes>
+    <processNodes xsi:type="ciat:IndividualTask" name="3. Suggest Changes">
+      <taskRoles xsi:type="ciat:Group" name="Committee"/>
+      <taskObjects name="R/W: DraftPlan"/>
+    </processNodes>
+    <processNodes xsi:type="ciat:Notification" name="Student; Director"/>
+    <processNodes xsi:type="ciat:Condition" name="? DraftPlan.Mark = Not Pass"/>
+    <processNodes xsi:type="ciat:IndividualTask" name="4. DEP Development">
+      <taskRoles xsi:type="ciat:Actor" name="Student"/>
+      <taskObjects name="C: DEP"/>
+    </processNodes>
+    <processNodes xsi:type="ciat:CooperativeTask" name="5. Post-DEP Procedure">
+      <taskRoles xsi:type="ciat:Actor" name="Student"/>
+      <taskRoles xsi:type="ciat:Actor" name="Director"/>
+      <taskRoles xsi:type="ciat:Group" name="Committee"/>
+      <taskObjects name="R/W: DEP"/>
+    </processNodes>
+    <processNodes xsi:type="ciat:CooperativeTask" name="6. Examination">
+      <taskRoles xsi:type="ciat:Actor" name="Student"/>
+      <taskRoles xsi:type="ciat:Group" name="Examiners"/>
+      <taskObjects name="R/W: DEP"/>
+    </processNodes>
+    <processNodes xsi:type="ciat:Notification" name="Student; Director"/>
+    <processNodes xsi:type="ciat:Notification" name="Examiners"/>
+    <processNodes xsi:type="ciat:Condition" name="? DraftPlan.Mark = Pass"/>
+    <processNodes xsi:type="ciat:Condition" name="? DEP.Mark &lt;= 5"/>
+    <processNodes xsi:type="ciat:Notification" name="Examiners"/>
+    <processNodes xsi:type="ciat:TemporalCondition" name="ExaminationDate"/>
+    <processNodes xsi:type="ciat:Condition" name="? DEP.Mark > 5"/>
+  </itsProcessDiagrams>
+  <itsLinks xsi:type="ciat:Enabling" source="//@itsProcessDiagrams.0/@processNodes.2/@processNodes.0" target="//@itsProcessDiagrams.0/@processNodes.2/@processNodes.1"/>
+  <itsLinks xsi:type="ciat:Enabling" source="//@itsProcessDiagrams.0/@processNodes.2/@processNodes.1" target="//@itsProcessDiagrams.0/@processNodes.2/@processNodes.2"/>
+  <itsLinks xsi:type="ciat:Aggregation" source="//@itsProcessDiagrams.0/@processNodes.0" target="//@itsProcessDiagrams.0/@processNodes.2"/>
+  <itsLinks xsi:type="ciat:EnablingWithInformationPassing" source="//@itsProcessDiagrams.0/@processNodes.2" target="//@itsProcessDiagrams.0/@processNodes.3" ewLabel="[Draf_Plan]>>"/>
+  <itsLinks xsi:type="ciat:Enabling" source="//@itsProcessDiagrams.0/@processNodes.3" target="//@itsProcessDiagrams.0/@processNodes.4"/>
+  <itsLinks xsi:type="ciat:Enabling" source="//@itsProcessDiagrams.0/@processNodes.4" target="//@itsProcessDiagrams.0/@processNodes.2"/>
+  <itsLinks xsi:type="ciat:Aggregation" source="//@itsProcessDiagrams.0/@processNodes.9" target="//@itsProcessDiagrams.0/@processNodes.1"/>
+  <itsLinks xsi:type="ciat:Enabling" source="//@itsProcessDiagrams.0/@processNodes.9" target="//@itsProcessDiagrams.0/@processNodes.7"/>
+  <itsLinks xsi:type="ciat:Enabling" source="//@itsProcessDiagrams.0/@processNodes.3" target="//@itsProcessDiagrams.0/@processNodes.7"/>
+  <itsLinks xsi:type="ciat:EnablingWithInformationPassing" source="//@itsProcessDiagrams.0/@processNodes.7" target="//@itsProcessDiagrams.0/@processNodes.8" ewLabel="[DEP]>>"/>
+  <itsLinks xsi:type="ciat:Enabling" source="//@itsProcessDiagrams.0/@processNodes.8" target="//@itsProcessDiagrams.0/@processNodes.9"/>
+</ciat:CIATDiagram>
